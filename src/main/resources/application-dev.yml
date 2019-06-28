@@ -1,0 +1,12 @@
+spring:
+  quartz:
+    properties:
+      org:
+        quartz:
+          scheduler:
+            instanceName: clusteredScheduler
+            instanceId: AUTO
+          threadPool:
+            class: org.quartz.simpl.SimpleThreadPool
+            threadCount: 4
+            threadsInheritContextClassLoaderOfInitializingThread: true
